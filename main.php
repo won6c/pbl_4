@@ -4,7 +4,7 @@
 $db_conn = mysql_conn();
 $page = $_SERVER['REQUEST_URI'];
 
-// Search Logic
+
 $search_type = $_POST["search_type"];
 $keyword = $_POST["keyword"];
 
@@ -18,7 +18,7 @@ if (empty($search_type) && empty($keyword)) {
     }
 }
 
-// Sort Logic
+
 $sort = $_GET["sort"];
 $sort_column = $_GET["sort_column"];
 
