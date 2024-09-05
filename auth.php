@@ -65,12 +65,12 @@ if ($mode == "withdrawal" && empty($password)) { ?>
   </div>
 <?php
 } else if ($mode == "delete" && !empty($password)) {
-    // 비밀번호 확인 후 삭제 처리
+
     $idx = $_POST["idx"];
     $password = $_POST["password"];
     $db_conn = mysql_conn();
 
-    // DB에서 해당 idx의 패스워드 확인
+
     $query = "SELECT password FROM {$tb_name} WHERE idx = {$idx}";
     
     $result=$db_conn->query($query);
@@ -109,12 +109,12 @@ if ($mode == "withdrawal" && empty($password)) { ?>
   </div>
 <?php
 } else if ($mode == "view" && !empty($password)) {
-    // 비밀번호 확인 후 삭제 처리
+
     $idx = $_POST["idx"];
     $password = $_POST["password"];
     $db_conn = mysql_conn();
 
-    // DB에서 해당 idx의 패스워드 확인
+  
     $query = "SELECT password FROM {$tb_name} WHERE idx = {$idx}";
     
     $result=$db_conn->query($query);
