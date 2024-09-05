@@ -72,15 +72,15 @@
             .form-container {
                 display: flex;
                 justify-content: center;
-                gap: 20px; /* 두 버튼 사이의 간격 */
+                gap: 20px;
                 align-items: center;
             }
             .form-container form {
-                flex: 1; /* 각 폼의 너비를 동일하게 설정 */
-                text-align: center; /* 버튼을 중앙에 배치 */
+                flex: 1; 
+                text-align: center; 
             }
             .form-container button {
-                width: 100%; /* 버튼을 폼의 너비에 맞춤 */
+                width: 100%; 
             }
         </style>
     </head>
@@ -111,14 +111,14 @@
             <br>
         </form>
         
-        <!-- 버튼을 양옆으로 배치 -->
+   
         <div class="form-container">
-            <!-- 업데이트 폼 -->
+       
             <form action="index.php?page=mypage" method="POST">
                 <button type="submit" class="btn btn-outline-danger">UPDATE</button>
             </form>
             
-            <!-- 탈퇴 폼 -->
+         
             <form action="index.php?page=auth" method="POST">
                 <input type="hidden" name="mode" value="withdrawal">
                 <button type="submit" class="btn btn-outline-danger">Withdrawal</button>
