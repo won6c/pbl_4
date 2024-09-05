@@ -6,8 +6,8 @@
       exit();
     }
     
-    $id = $_POST["id"];
-    $password = $_POST["password"];
+    $id = $_POST["id"]; # $_REQEUST["id"];
+    $password = $_POST["password"];# $_REQEUST["password"];
 
     if(!empty($id) && !empty($password)){
         if(preg_match("/['\"]/",$id)){
